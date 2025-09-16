@@ -10,7 +10,7 @@ Considerations:
 - It is not a new pattern, but it is a useful one.
 - This takes the basic concept of a BoundEnum and extends it not only beyond the regular DescriptionAttribute, but also in support of localization/globalization.
 - This pattern is not limited to WPF and can be used in other XAML-based frameworks like UWP, MAUI, Avalonia, etc.
-- It advances the BoundEnum beyond the old methods by no longer relying on the ObjectDataProvider.
+- It advances the BoundEnum beyond the old methods by no longer relying on the ObjectDataProvider, which isn't available in Avalonia.
 - One improvement consideration is to implement a caching mechanism to avoid repeated reflection calls for the same enum type.
 - Other improvements could be to support more complex localization scenarios, like:
   - Context-based translations or pluralization,
@@ -23,4 +23,4 @@ Considerations:
   - Provide a way to customize the display format of the enum values, such as adding prefixes or suffixes.
   - Finally, another improvement could be to provide a way to filter the enum values based on certain criteria, such as user roles or permissions.
 
-This can go off in many directions, but the core concept is to provide a simple and effective way to bind localized enum values to UI controls in a XAML-based application.
+This can go off in many directions, but the core concept is to provide a simple and effective way to bind localized enum values to UI controls in a XAML-based application and provide the framework for more complex "bolt-on" solutions that would otherwise unnecessarily clutter up your code-behind or view model.
