@@ -1,4 +1,4 @@
-# localizable-enum-description
+# Localizable Enums with Culture-keyed descriptions
 A means of hydrating an ItemsControl's items with enum values that are decorated with attributes that map to culture-selected string values.
 
 This is the barebones example of the LocalizedBoundEnum pattern that uses the decoration as its means of providing globalized/localized enum bindings to ItemsSource controls. The usual methods of binding the selected values are not shown here, but are supported as they always are; to demonstrate them here is out of scope.
